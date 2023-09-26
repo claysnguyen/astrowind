@@ -30,6 +30,9 @@ export default defineConfig({
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
+  redirects: {
+    '/ipfs-404.html': '/hhcc'
+  },
 
   integrations: [
     tailwind({
